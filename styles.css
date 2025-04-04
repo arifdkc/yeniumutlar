@@ -1,0 +1,259 @@
+/* Premium ve Şık CSS Dosyası */
+
+:root {
+    --primary-color: #1e3a5f;
+    --secondary-color: #f4a261;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --white: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.kurucumuzdan {
+    background: var(--primary-color);
+
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+
+.metin {
+    margin: 20px;
+    text-align: justify;
+    font-size: 24px;
+    color: var(--text-color);
+    line-height: 35px;
+}
+
+
+.top-bar {
+    background: var(--primary-color);
+    margin: 0;
+    text-align: right;
+    height: 30px;
+}
+
+.top-bar ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.contact-info {
+    margin: 0;
+}
+
+.top-bar ul li {
+    display: inline;
+    margin: 10px 15px;
+
+}
+
+.top-bar ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Navbar */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px 50px;
+    background: var(--primary-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: bold;
+    position: absolute;
+    left: 30px;
+
+    top: -80px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #f4a261;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    top: 100%;
+    left: -52px;
+    min-width: 180px;
+    background: var(--secondary-color);
+    padding: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 8px 15px;
+}
+
+.dropdown-menu a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+/* Mobil Menü */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+.main-footer {
+    width: 100%;
+
+    text-align: center;
+    padding: 0px;
+    margin-top: 50px;
+
+}
+
+.main-footer li {
+    margin-top: 20px;
+}
+
+.main-footer li a {
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+.ul ul li:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: #f4a261 2px solid;
+    padding-bottom: 10px;
+
+}
+
+
+
+.section{
+    background: var(--primary-color);
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #f4a261;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .ul ul {
+        padding: 0 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .container {
+        height: auto;
+        flex-direction: column-reverse;
+
+    }
+
+    .metin {
+        height: auto;
+
+        margin: 20px;
+        text-align: justify;
+        font-size: 18px;
+        color: var(--text-color);
+        line-height: 30px;
+    }
+
+
+}
