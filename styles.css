@@ -25,34 +25,20 @@ body {
     padding: 0;
 }
 
-.kurucumuzdan {
-    background: var(--primary-color);
-
-    padding: 20px;
-    margin-top: 20px;
-    color: var(--white);
+.div{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    box-shadow: 0 4px 8px var(--shadow-color);
+    height: 100px;
+    width: 100%;
 }
-
-
-.metin {
-    margin: 20px;
-    text-align: justify;
-    font-size: 24px;
-    color: var(--text-color);
-    line-height: 35px;
-}
-
 
 .top-bar {
     background: var(--primary-color);
     margin: 0;
     text-align: right;
-    height: 30px;
+    height:80px;
+    display: flex;
 }
 
 .top-bar ul {
@@ -62,17 +48,24 @@ body {
 
 .contact-info {
     margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
 }
 
-.top-bar ul li {
-    display: inline;
-    margin: 10px 15px;
+i{
+    font-size: 30px;
+    margin: 10px;
 
 }
 
 .top-bar ul li a {
     color: var(--white);
     text-decoration: none;
+    margin: 20px;
 }
 
 /* Navbar */
@@ -93,8 +86,7 @@ body {
     font-weight: bold;
     position: absolute;
     left: 30px;
-
-    top: -80px;
+    top: -100px;
 }
 
 .nav-links {
@@ -203,7 +195,7 @@ body {
 
 
 
-.section{
+.section {
     background: var(--primary-color);
     padding: 20px;
     margin-top: 20px;
@@ -215,45 +207,20 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #f4a261;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 10px 0;
+    .top-bar {
+        height: 80px;
+   display: flex;
+    }
+    .main-nav {
+        height: 100px;
+        background: var(--primary-color);
+        padding-top: 0px;
     }
 
-    .ul ul {
-        padding: 0 20px;
+
+    .logo {
+        margin-top: 60px;
+        padding: 0;
     }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .container {
-        height: auto;
-        flex-direction: column-reverse;
-
-    }
-
-    .metin {
-        height: auto;
-
-        margin: 20px;
-        text-align: justify;
-        font-size: 18px;
-        color: var(--text-color);
-        line-height: 30px;
-    }
-
 
 }
