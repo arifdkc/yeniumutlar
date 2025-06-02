@@ -24,4 +24,5 @@ Bu projeyi yerel bilgisayarınızda çalıştırmak için:
 ```bash
 git clone https://github.com/arifdkc/ozel-bursa-yeni-umutlar-anaokulu.git
 cd ozel-bursa-yeni-umutlar-anaokulu
-# Dosyaları herhangi bir canlı sunucuya veya VS Code Live Server eklentisiyle çalıştırabilirsiniz
+# Dosyaları herhangi bir canlı sunucuya veya VS Code Live Server eklentisiyle çalıştırabilirsiniz veya
+[ozelbursayeniumutlar.com ](https://ozelbursayeniumutlaranaokulu.com/) ile inceleyebilirsiniz
