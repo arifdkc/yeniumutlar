@@ -194,7 +194,30 @@
 .read-more:hover i {
     transform: translateX(5px);
 }
-
+.blog-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.blog-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.blog-btn:hover {
+    transform: translateY(-3px);
+    color: var(--secondary-color);
+    box-shadow: 0 5px 10px var(--dark-color);
+}
 /* Newsletter Section */
 .newsletter {
     background-color: var(--secondary-color);
